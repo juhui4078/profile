@@ -56,55 +56,55 @@ body {
 /* 마커 위치 */
 .marker.czechia {
   top: 25.5%;
-  left: 16.5%;
+  left: 15.5%;
   width: 60px;
   height: 60px;
 }
 .marker.hungary {
   top: 30%;
-  left: 19%;
+  left: 18%;
   width: 60px;
   height: 60px;
 }
 .marker.austria {
-  top: 30%;
-  left: 14%;
+  top: 29.5%;
+  left: 13%;
   width: 60px;
   height: 60px;
 }
 .marker.china {
   top: 40%;
-  left: 71.5%;
+  left: 72%;
   width: 60px;
   height: 60px;
 }
 .marker.taiwan {
-  top: 45.4%;
-  left: 77.3%;
+  top: 45.5%;
+  left: 78%;
   width: 45px;
   height: 45px;
 }
 .marker.hongkong {
   top: 47%;
-  left: 75.5%;
+  left: 76%;
   width: 40px;
   height: 40px;
 }
 .marker.japan {
-  top: 39%;
-  left: 82.5%;
+  top: 39.5%;
+  left: 83.2%;
   width: 45px;
   height: 45px;
 }
 .marker.australia {
   top: 66%;
-  left: 80%;
+  left: 81%;
   width: 60px;
   height: 60px;
 }
 .marker.newzealand {
   top: 74%;
-  left: 91%;
+  left: 92.5%;
   width: 45px;
   height: 45px;
 }
@@ -264,8 +264,8 @@ body {
 
 .country-label {
   position: absolute;
-  top: -74px;
-  right: 75px;
+  top: 35px;
+  left: 710px; /* 시작 위치 고정 */
   color: #fff;
   padding: 6px 12px;
   border-radius: 12px;
@@ -273,4 +273,5 @@ body {
   font-weight: bold;
   font-family: "Cafe24Ohsquare";
   z-index: 5;
+  text-align: left;
 }

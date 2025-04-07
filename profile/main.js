@@ -22,23 +22,143 @@ const data = {
     countryName: "Czechia",
   },
   // 다른 국가들도 동일하게 추가
+
+  // Hungary
+  hungary: {
+    title: "성격",
+    text: `필요한 말을 정확하게 전달하려고 노력하는 스타일이에요.<br />
+           차분한 편이고, 일할 땐 집중력 있게 꾸준히 파고드는 성향이에요.<br />
+           조용하지만 책임감 있고, 맡은 건 끝까지 해내는 걸 중요하게 생각해요.`,
+    // 이미지 경로를 아래처럼 고쳐줘!
+    images: [
+      "/profile/img/word/czechia1.jpg",
+      "/profile/img/word/czechia2.jpg",
+      "/profile/img/word/czechia3.jpg",
+    ],
+
+    // 여러 장 가능
+    countryName: "Hungary",
+  },
+
+  // Austria
+  austria: {
+    title: "성격",
+    text: `필요한 말을 정확하게 전달하려고 노력하는 스타일이에요.<br />
+          차분한 편이고, 일할 땐 집중력 있게 꾸준히 파고드는 성향이에요.<br />
+          조용하지만 책임감 있고, 맡은 건 끝까지 해내는 걸 중요하게 생각해요.`,
+    // 이미지 경로를 아래처럼 고쳐줘!
+    images: [
+      "/profile/img/word/czechia1.jpg",
+      "/profile/img/word/czechia2.jpg",
+      "/profile/img/word/czechia3.jpg",
+    ],
+
+    // 여러 장 가능
+    countryName: "Austria",
+  },
+
+  // China
+  china: {
+    title: "성격",
+    text: `필요한 말을 정확하게 전달하려고 노력하는 스타일이에요.<br />
+          차분한 편이고, 일할 땐 집중력 있게 꾸준히 파고드는 성향이에요.<br />
+          조용하지만 책임감 있고, 맡은 건 끝까지 해내는 걸 중요하게 생각해요.`,
+    // 이미지 경로를 아래처럼 고쳐줘!
+    images: [
+      "/profile/img/word/czechia1.jpg",
+      "/profile/img/word/czechia2.jpg",
+      "/profile/img/word/czechia3.jpg",
+    ],
+
+    // 여러 장 가능
+    countryName: "China",
+  },
+
+  // Taiwan
+  taiwan: {
+    title: "성격",
+    text: `필요한 말을 정확하게 전달하려고 노력하는 스타일이에요.<br />
+          차분한 편이고, 일할 땐 집중력 있게 꾸준히 파고드는 성향이에요.<br />
+          조용하지만 책임감 있고, 맡은 건 끝까지 해내는 걸 중요하게 생각해요.`,
+    // 이미지 경로를 아래처럼 고쳐줘!
+    images: [
+      "/profile/img/word/czechia1.jpg",
+      "/profile/img/word/czechia2.jpg",
+      "/profile/img/word/czechia3.jpg",
+    ],
+
+    // 여러 장 가능
+    countryName: "Taiwan",
+  },
+
+  // Hong Kong
+  hongkong: {
+    title: "성격",
+    text: `필요한 말을 정확하게 전달하려고 노력하는 스타일이에요.<br />
+          차분한 편이고, 일할 땐 집중력 있게 꾸준히 파고드는 성향이에요.<br />
+          조용하지만 책임감 있고, 맡은 건 끝까지 해내는 걸 중요하게 생각해요.`,
+    // 이미지 경로를 아래처럼 고쳐줘!
+    images: [
+      "/profile/img/word/czechia1.jpg",
+      "/profile/img/word/czechia2.jpg",
+      "/profile/img/word/czechia3.jpg",
+    ],
+
+    // 여러 장 가능
+    countryName: "Hong Kong",
+  },
+
+  // 	Japan
+  japan: {
+    title: "성격",
+    text: `필요한 말을 정확하게 전달하려고 노력하는 스타일이에요.<br />
+          차분한 편이고, 일할 땐 집중력 있게 꾸준히 파고드는 성향이에요.<br />
+          조용하지만 책임감 있고, 맡은 건 끝까지 해내는 걸 중요하게 생각해요.`,
+    // 이미지 경로를 아래처럼 고쳐줘!
+    images: [
+      "/profile/img/word/czechia1.jpg",
+      "/profile/img/word/czechia2.jpg",
+      "/profile/img/word/czechia3.jpg",
+    ],
+
+    // 여러 장 가능
+    countryName: "Japan",
+  },
+
+  // 	Australia
+  australia: {
+    title: "성격",
+    text: `필요한 말을 정확하게 전달하려고 노력하는 스타일이에요.<br />
+          차분한 편이고, 일할 땐 집중력 있게 꾸준히 파고드는 성향이에요.<br />
+          조용하지만 책임감 있고, 맡은 건 끝까지 해내는 걸 중요하게 생각해요.`,
+    // 이미지 경로를 아래처럼 고쳐줘!
+    images: [
+      "/profile/img/word/czechia1.jpg",
+      "/profile/img/word/czechia2.jpg",
+      "/profile/img/word/czechia3.jpg",
+    ],
+
+    // 여러 장 가능
+    countryName: "Australia",
+  },
+
+  //	New Zealand
+  newzealand: {
+    title: "성격",
+    text: `필요한 말을 정확하게 전달하려고 노력하는 스타일이에요.<br />
+          차분한 편이고, 일할 땐 집중력 있게 꾸준히 파고드는 성향이에요.<br />
+          조용하지만 책임감 있고, 맡은 건 끝까지 해내는 걸 중요하게 생각해요.`,
+    // 이미지 경로를 아래처럼 고쳐줘!
+    images: [
+      "/profile/img/word/czechia1.jpg",
+      "/profile/img/word/czechia2.jpg",
+      "/profile/img/word/czechia3.jpg",
+    ],
+
+    // 여러 장 가능
+    countryName: "New Zealand",
+  },
 };
-
-// Hungary
-
-// Austria
-
-// China
-
-// Taiwan
-
-// Hong Kong
-
-// 	Japan
-
-// 	Australia
-
-//	New Zealand
 
 let currentImageIndex = 0;
 let currentImages = [];
