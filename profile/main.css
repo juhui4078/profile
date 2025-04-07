@@ -1,0 +1,276 @@
+\@font-face {
+  font-family: "Danjo-bold-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Danjo-bold-Regular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cafe24Ohsquare";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Cafe24Ohsquare.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: "Pretendard", sans-serif;
+  background-color: #fdfdfd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.map-container {
+  position: relative;
+  margin: 0 auto;
+  background-color: #b6b3aa;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.marker {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  z-index: 2;
+}
+
+.marker:hover {
+  transform: scale(1.3);
+}
+
+.marker img {
+  width: 100%;
+  height: 100%;
+}
+
+/* 마커 위치 */
+.marker.czechia {
+  top: 25.5%;
+  left: 16.5%;
+  width: 60px;
+  height: 60px;
+}
+.marker.hungary {
+  top: 30%;
+  left: 19%;
+  width: 60px;
+  height: 60px;
+}
+.marker.austria {
+  top: 30%;
+  left: 14%;
+  width: 60px;
+  height: 60px;
+}
+.marker.china {
+  top: 40%;
+  left: 71.5%;
+  width: 60px;
+  height: 60px;
+}
+.marker.taiwan {
+  top: 45.4%;
+  left: 77.3%;
+  width: 45px;
+  height: 45px;
+}
+.marker.hongkong {
+  top: 47%;
+  left: 75.5%;
+  width: 40px;
+  height: 40px;
+}
+.marker.japan {
+  top: 39%;
+  left: 82.5%;
+  width: 45px;
+  height: 45px;
+}
+.marker.australia {
+  top: 66%;
+  left: 80%;
+  width: 60px;
+  height: 60px;
+}
+.marker.newzealand {
+  top: 74%;
+  left: 91%;
+  width: 45px;
+  height: 45px;
+}
+
+.main-title {
+  font-family: "Danjo-bold-Regular";
+  font-size: 50px;
+  font-weight: 700;
+  color: #333;
+}
+
+.sub-text {
+  font-family: "Danjo-bold-Regular";
+  font-size: 23px;
+  color: #fff;
+  margin-bottom: -20px;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 10;
+}
+
+.ticket {
+  position: relative;
+  width: 1000px;
+  height: 479px;
+}
+
+.ticket-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.ticket-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+  top: -440px;
+  left: 35px;
+}
+
+.card-title {
+  font-family: "Cafe24Ohsquare";
+  font-size: 30px;
+  color: #868686;
+  margin-bottom: 15px;
+}
+
+.card-text {
+  font-size: 20px;
+  color: #444;
+  line-height: 1.5;
+}
+
+.card-image {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  font-size: 30px;
+  background: none;
+  border: 2.5px solid rgba(255, 255, 255, 0.7); /* 테두리 추가 */
+  cursor: pointer;
+  color: #fff;
+  z-index: 10;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+}
+.close-btn:hover {
+  transform: scale(1.3);
+}
+
+.text {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  left: 10px;
+  bottom: 10px;
+  background-image: url(img/map2.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end; /* 텍스트를 아래쪽으로 붙이기 */
+  justify-content: center;
+  padding-bottom: 10px; /* 아래 여백 */
+  z-index: 1;
+}
+
+.text-box {
+  text-align: center;
+  z-index: 2;
+}
+
+.image-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  position: relative;
+  top: 69px;
+  right: 81px;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.prev-btn,
+.next-btn {
+  border: 1.8px solid rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  transition: background 0.3s;
+  background-color: transparent;
+  color: #fff;
+
+  display: flex; /* ✅ 가운데 정렬을 위해 추가 */
+  align-items: center;
+  justify-content: center;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.country-label {
+  position: absolute;
+  top: -74px;
+  right: 75px;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 35px;
+  font-weight: bold;
+  font-family: "Cafe24Ohsquare";
+  z-index: 5;
+}

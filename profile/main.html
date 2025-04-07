@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Map About Me</title>
+    <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+  
+    <div class="map-container">
+      <div class="text">
+        <div class="text-box">
+            <p class="sub-text">Click on a location to learn about my journey</p>
+            <h1 class="main-title">World Map About Me</h1>
+        </div>
+      </div>
+  
+      <div class="marker czechia" onclick="showCard('czechia')">
+        <img src="img/mark/mark40.png" alt="Marker" />
+      </div>
+      <div class="marker hungary" onclick="showCard('hungary')">
+        <img src="img/mark/mark40.png" alt="Marker" />
+      </div>
+      <div class="marker austria" onclick="showCard('austria')">
+        <img src="img/mark/mark40.png" alt="Marker" />
+      </div>
+      <div class="marker china" onclick="showCard('china')">
+        <img src="img/mark/mark40.png" alt="Marker" />
+      </div>
+      <div class="marker taiwan" onclick="showCard('taiwan')">
+        <img src="img/mark/mark25.png" alt="Marker" />
+      </div>
+      <div class="marker hongkong" onclick="showCard('hongkong')">
+        <img src="img/mark/mark20.png" alt="Marker" />
+      </div>
+      <div class="marker japan" onclick="showCard('japan')">
+        <img src="img/mark/mark30.png" alt="Marker" />
+      </div>
+      <div class="marker australia" onclick="showCard('australia')">
+        <img src="img/mark/mark40.png" alt="Marker" />
+      </div>
+      <div class="marker newzealand" onclick="showCard('newzealand')">
+        <img src="img/mark/mark30.png" alt="Marker" />
+      </div>
+  
+      <div class="card-overlay" id="card">
+        <button class="close-btn" onclick="closeCard()">✕</button>
+        <div class="ticket">
+          <img src="img/ticket.png" alt="Ticket" class="ticket-bg" />
+
+          <div class="ticket-content">
+            <div class="text-content">
+              <div class="card-title" id="card-title"></div>
+              <div class="card-text" id="card-text"></div>
+            </div>
+                <!-- 이미지 슬라이더 영역에 좌우 버튼 추가 -->
+            <div class="image-slider">
+              <img class="card-image" id="card-image" src="" alt="Photo" />
+              <div class="country-label" id="country-label"></div>
+              <div class="pagination">
+                <button class="prev-btn" onclick="changeImage(-1)">&#9664;</button>
+                <button class="next-btn" onclick="changeImage(1)">&#9654;</button>
+              </div>
+            </div>
+
+       
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <script src="main.js"></script>
+  </body>
+</html>
